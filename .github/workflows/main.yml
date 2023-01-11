@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3.3.0
     - name: annotate
       run: |
         echo "::error file=lib/default.nix,line=5::This is some error"
