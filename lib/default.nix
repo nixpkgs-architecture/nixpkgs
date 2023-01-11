@@ -21,6 +21,8 @@ let
     strings = callLibs ./strings.nix;
     stringsWithDeps = callLibs ./strings-with-deps.nix;
 
+    test
+
     # packaging
     customisation = callLibs ./customisation.nix;
     maintainers = import ../maintainers/maintainer-list.nix;
