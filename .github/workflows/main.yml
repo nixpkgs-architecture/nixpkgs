@@ -13,4 +13,4 @@ jobs:
     - name: annotate
       run: |
         echo "::error file=lib/default.nix,line=5::This is some error"
-        echo "::error file=lib/sources.nix,line=5::This is some other error"
+        echo "::error file=lib/sources.nix::This is some other error"
