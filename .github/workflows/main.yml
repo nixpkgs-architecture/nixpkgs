@@ -1,0 +1,16 @@
+on:
+  pull_request:
+    branches:
+    - actions-test
+    
+jobs:
+  annotation:
+    name: Create a code annotation
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: annotate
+      run: |
+        echo "::error file=lib/default.nix,line=5::This is some error"
+        echo "::error file=lib/sources.nix,line=5::This is some other error"
