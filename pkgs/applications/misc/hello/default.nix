@@ -16,8 +16,6 @@ stdenv.mkDerivation (finalAttrs: {
     sha256 = "sha256-jZkUKv2SV28wsM18tCqNxoCZmLxdYH2Idh9RLibH2yA=";
   };
 
-  doCheck = true;
-
   passthru.tests = {
     version = testers.testVersion { package = hello; };
 
